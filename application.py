@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 # print a nice greeting.
 def say_hello(username = "World"):
@@ -8,7 +8,7 @@ def say_hello(username = "World"):
 application = Flask(__name__)
 
 # some bits of text for the page.
-@application.route('/app')
+@application.route('/')
 def main():
     return render_template("Test.html")
 
