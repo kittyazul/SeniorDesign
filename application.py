@@ -4,8 +4,6 @@ from flask import Flask, render_template
 def say_hello(username = "World"):
     return '<p>Hello %s!</p>\n' % username
 
-# EB looks for an 'application' callable by default.
-application = Flask(__name__)
 
 # some bits of text for the page.
 header_text = '''
@@ -13,6 +11,8 @@ header_text = '''
 instructions = '''
 <body><p>Eventuallllllyyyyyyyyyyyyyyyyyyyy</p></body></html> '''
 
+# EB looks for an 'application' callable by default.
+application = Flask(__name__)
 
 #@application.route('/')
 #def main():
