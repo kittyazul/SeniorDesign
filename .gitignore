@@ -1,5 +1,10 @@
 
+# Python files
+__pycache__/
+app/__pycache__/
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
