@@ -5,7 +5,6 @@ def say_hello(username = "World"):
     return '<p>Hello %s!</p>\n' % username
 
 # some bits of text for the page.
-@app.route('/app')
 def main():
     return render_template("Test.html")
 
