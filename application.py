@@ -8,9 +8,15 @@ def say_hello(username = "World"):
 application = Flask(__name__)
 
 # some bits of text for the page.
-@application.route('/')
-def main():
-    return render_template("Test.html")
+header_text = '''
+<html><head><title>Home page</title></head>'''
+instructions = '''
+<body><p>Eventuallllllyyyyyyyyyyyyyyyyyyyy</p></body></html> '''
+
+
+#@application.route('/')
+#def main():
+ #   return render_template("Test.html")
 
 # run the app.
 if __name__ == "__main__":
