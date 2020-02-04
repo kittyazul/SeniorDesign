@@ -4,5 +4,5 @@ application = Flask(__name__)
 
 @application.route('/')
 def display():
-    return render_template('Test.html')
+    return render_template('Index.html')
 
