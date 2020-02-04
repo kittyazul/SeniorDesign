@@ -8,7 +8,7 @@ def say_hello(username = "World"):
 application = Flask(__name__)
 
 # some bits of text for the page.
-@application.route('/')
+@application.route('/app')
 def main():
     return render_template("Test.html")
 
