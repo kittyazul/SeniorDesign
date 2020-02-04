@@ -4,12 +4,13 @@ from flask import Flask
 def say_hello(username = "World"):
     return '<p>Hello %s!</p>\n' % username
 
-# some bits of text for the page.
-def main():
-    return render_template("Test.html")
-
 # EB looks for an 'application' callable by default.
 application = Flask(__name__)
+
+# some bits of text for the page.
+@application.route('/')
+def main():
+    return render_template("Test.html")
 
 # run the app.
 if __name__ == "__main__":
