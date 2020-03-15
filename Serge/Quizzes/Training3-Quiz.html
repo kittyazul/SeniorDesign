@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<title>Detecting Phishing Quiz</title>
+	<meta charset= "utf-8">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="Quiz.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <div class="question-number">
+            <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+        </div>
+        <div class="question">
+            
+        </div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answers-tracker"></div>
+    </div>
+
+    <div class="quiz-over">
+        <div class="box">
+            <h1>
+                <u>Your Score:</u><br>
+                You got <span class="correct-answers"></span> out of <span class="total-question2"></span> answers correct! <br>
+                That's <span class="percentage"></span>
+            </h1>
+            <button type="button" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="JavaScript/Training3-Quiz.js"></script>
+
+</body>
+</html>
