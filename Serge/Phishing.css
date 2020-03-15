@@ -794,6 +794,7 @@ input {
 	border: 3px solid rgb(0, 128, 117);
 }
 
+
 /* =============================*/
 /*   		Other Rules		    */ 
 /* =============================*/
@@ -883,3 +884,10 @@ input {
   	color: white;
 }
 
+.quiz { color: red;}
+
+.quiz:visited { color: red;}
+
+.quiz:hover {
+  	color: #f44336;
+}
