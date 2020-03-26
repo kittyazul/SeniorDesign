@@ -1,7 +1,79 @@
-{% extends "layout.html" %}
-{% block body %}
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<title>Learn how to avoid Phishing</title>
+	<meta charset= "utf-8">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="static/Phishing.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<header>
+	<img src="static/Welcome.gif" alt= "Welcome" style="width:22%; margin-left: 40%; margin-right: 30%;"> 	
+</header>
+
+<nav>
+	<ul class="navmenu">
+		<li><a href="Index.html">HOME</a></li>
+		
+		<li><a href="About.html">ABOUT PHISHING</a><span class = "darrow">&#9660;</span>
+			<ul class = "sub1">
+				<li><a href="Phishing101.html">What is Phishing?</a><span class = "rarrow">&#9654;</span>
+					<ul class = "sub2">
+						<li><a href="Definition.html">Definition</a></li>
+						<li><a href="PhishTech.html">Phishing Techniques</a></li>
+					</ul>
+				</li>
+				<li><a href="More.html">Learn more</a><span class = "rarrow">&#9654;</span>
+					<ul class = "sub2">
+						<li><a href="History.html">History of Phishing</a></li>
+						<li><a href="Examples.html">Examples of Phishing</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+
+		<li><a href="Training.html">TRAINING</a><span class = "darrow">&#9660;</span>
+			<ul class = "sub1">
+				<li><a href="Training1.html">Phishing 101</a><span class = "rarrow">&#9654;</span>
+					<ul class = "sub2">
+						<li><a href="Training1-1.html">Introduction</a></li>
+						<li><a href="Training1-2.html">How to avoid Phishing?</a></li>
+						<li><a href="Training1-3.html">How to detect Phishing?</a></li>
+						<li><a href="Training1-4.html">How to report Phishing?</a></li>
+						<li><a href="Training1-5.html">How to use D-Phish?</a></li>
+						<li><a href="Training1-6.html">Learn more about Phishing</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="Knowledge.html">Test your knowledge</a><span class = "rarrow">&#9654;</span>
+					<ul class = "sub2">
+						<li><a href="Quizzes.html">Take some Quizzes</a></li>
+						<li><a href="Games.html">Play some Games</a></li>		
+					</ul>
+				</li>	
+
+			</ul>
+		</li>
+		
+		<li><a href="T&R.html">TOOLS & RESOURCES</a><span class = "darrow">&#9660;</span>
+			<ul class = "sub1">
+				<li><a href="D-Phish.html">D-Phish</a></li>							
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+
 <main>
-<div id="PageWrapper">
+	<div class="PageWrapper">
 		<p style= "
 			text-align: center; 
 			font-size: 22px; 
@@ -12,7 +84,7 @@
 			width: 35%;
 			margin-left:34%;
 			margin-right: 34%;
-			background-image: url({{ url_for('static', filename='NavD.jpg') }});">
+			background-image: url(static/NavD.jpg);">
 			<b>HOW TO AVOID PHISHING?</b>
 		</p>	
 		<br>
@@ -25,8 +97,7 @@
 			border-radius: 25px;
 			width: 40%;
 			margin-left: 9%;
-			background-color: black;
-			">
+			background-image: url(static/giphy3.gif);">
 			<b>PART I: UNDERSTANDING PHISHING TACTICS</b>
 			<br>	
 		</p>
@@ -54,8 +125,8 @@
 			text-decoration: none; 
 			text-align: justify; 
 			font-size: 18px; 
-			color: black;
-			background-color: #999999;
+			color: white;
+			background-color: #272727e5;
 			margin-left: 9%; 
 			margin-right: 5%; 
 			padding: 4%;
@@ -88,7 +159,24 @@
 				Remember that hovering over a link will show you the actual URL where you will be directed upon clicking on it, so look carefully.
 				Furthermore, if you see an attachment in an email you were not expecting, DO NOT OPEN IT.
 				They often contain payloads like ransomware or other viruses.
-				To see some examples of phishing, click here: <a href="Examples.html">Phishing Examples</a>.	 
+				<br><br>
+				To see some examples of phishing, click here: 
+				&nbsp;&nbsp; 
+				<a href="Examples.html" target="_blank">
+					<button 
+						class="btn more" 
+						style="
+							background-image: url(static/Background.jpg);
+							width: 28%; 
+							height: 35px;
+							margin-right: 5%;
+							border: 2px solid black; 
+							border-radius: 25px;">
+						<b>Phishing Examples</b>
+						&nbsp;
+						<i class='fas fa-arrow-alt-circle-right' style='font-size:18px'></i>
+					</button>	
+				</a>
 			</li>	
 		</ul>
 		<br><br>
@@ -102,8 +190,7 @@
 			border-radius: 25px;
 			width: 45%;
 			margin-left: 9%;
-			background-color: black;
-			">
+			background-image: url(static/giphy3.gif);">
 			<b>PART II: LEARN HOW TO SPOT PHISHING ATTACKS</b>
 			<br>	
 		</p>
@@ -127,66 +214,239 @@
 			border-radius: 25px;
 			width: 45%;
 			margin-left:6.8%;
-			background-color: black;
-			">
+			background-image: url(static/giphy3.gif);">
 			<b>PART III: TEST YOUR KNOWLEDGE & UNDERSTANDING</b>
 			<br><br>	
 		</p>
 
-		<p style= "
-			text-decoration: none; 
-			text-align: justify; 
-			font-size: 18px; 
-			margin-left: 7%; 
-			margin-right: 7%;
-			padding-left: 2%;
-			padding-right: 2%;
-			border: 2px solid black;
-			width: 15%;">
-				Coming soon!
-		</p>
-
+		<br><br>
+		<a href = "Training2-Quiz.html" target="_blank">
+			<button class="btn quiz" 
+				style="
+					width: 18%; 
+					height: 40px; 
+					border: 2px solid red;
+					border-radius: 10px;
+					margin-left: 34%;
+					margin-right: 34%;
+					background-image: url(static/quiz.gif);">
+				<b>Start the Quiz </b>
+				&nbsp;
+				<i class='fas fa-sign-in-alt' style='font-size:18px'></i>
+			</button>	
+		</a>
 		<br><br><br><br><br><br><br><br>	
 		<p>
-			<a href = "Training1-1.html">
-				<button style='
-					float: left;
-					color: white;
-					font-size:20px; 
-					width: 28%; 
-					height: 50px;
-					margin-left: 5%;
-					border: 2px solid black; 
-					border-radius: 25px;
-					background-image: url({{ url_for('static', filename='NavD.jpg') }});'
-					> 
-					Part I: Introduction
-				</button>
-			</a>
-			
-			<a href = "Training1-3.html">
-				<button style='
-					float: right;
-					color: white;
-					font-size:20px; 
-					width: 28%; 
-					height: 50px;
-					margin-right: 5%;
-					border: 2px solid black; 
-					border-radius: 25px;
-					background-image: url({{ url_for('static', filename='NavD.jpg') }});'
-					> 
-					Part III: How to detect Phishing?
-				</button>
+			<a href="Training1-1.html">
+				<button 
+					class="btn more" 
+					style="
+						background-image: url(static/Background.jpg);
+						width: 28%; 
+						height: 50px;
+						margin-left: 5%;
+						border: 2px solid black; 
+						border-radius: 25px;
+						float: left;">
+					<i class='fas fa-arrow-alt-circle-left' style='font-size:18px'></i>
+					&nbsp;
+					<b>Lesson I: Course Introduction</b>
+				</button>	
 			</a>
 
-
-			<br><br>
-			<br><br>
-		</p>
-		
-
+			<a href="Training1-3.html">
+				<button 
+					class="btn more" 
+					style="
+						background-image: url(static/Background.jpg);
+						width: 28%; 
+						height: 50px;
+						margin-right: 5%;
+						border: 2px solid black; 
+						border-radius: 25px;
+						float: right;">
+					<b>Lesson III: How to detect Phishing?</b>
+					&nbsp;
+					<i class='fas fa-arrow-alt-circle-right' style='font-size:18px'></i>
+				</button>	
+			</a>
+			<br><br><br><br>
 	</div>
 	
 </main>
-{% endblock %}
+
+<div class = "footer">
+	<div class="footer-content">
+		
+		<div class="footer-section About">
+			<h1 class="logo-text"><span>Phishing Guard</span></h1>
+			
+			<p style= "text-align: justify; font-size: 17.5px; margin-left:1%; margin-right: 1%;">
+				Phishing Guard is a FREE, comprehensive, and easy to navigate web application designed to provide its users with the ability 
+				to receive interactive and effective training about Phishing. 
+			</p>
+			
+			<p style= "text-align: justify; font-size: 17.5px;">
+				Get in touch with the Team.
+			</p>
+
+			<div class="contact">
+				<span> &nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i> &nbsp; 513-556-4307</span>
+				<span> &nbsp;&nbsp;&nbsp;<i class="fas fa-envelope"></i> &nbsp; <a href="mailto:kikondsk@mail.uc.edu">Phishing Guard Support Team</a></span>
+			</div>
+
+			<p style= "text-align: justify; font-size: 17.5px; margin-left:1%; margin-right: 1%;">
+				Get in touch with Serge Kikonda for any questions about the website.
+			</p>
+
+			<div class="socials">
+				&nbsp;&nbsp;
+				<a href="https://www.facebook.com/serkikonda/" target="_blank">
+					<img src="static/Facebook.png" 
+						alt= "Facebook" 
+						style="width:7%; height:25px;  border: 2px solid #CCC; border-radius: 15px;"
+					>
+				</a>
+				&nbsp;
+				<a href="https://www.instagram.com/serge_kikonda/" target="_blank">
+					<img src="static/Instagram.png" 
+						alt= "Instagram" 
+						style="width:7%; height:25px;  border: 2px solid #CCC; border-radius: 15px;"
+					>
+				</a>
+				&nbsp;
+				<a href="https://www.youtube.com/channel/UCWFAnBZQpmXZHqXQc3jmfzw?view_as=subscriber" target="_blank">
+					<img src="static/Youtube.png" 
+						alt= "Youtube" 
+						style="width:7%; height:25px;  border: 2px solid #CCC; border-radius: 15px;"
+					>
+				</a>
+				&nbsp;
+				<a href="mailto:kikondsk@mail.uc.edu" target="_blank">
+					<img src="static/Outlook.png" 
+						alt= "Outlook" 
+						style="width:7%; height:25px;  border: 2px solid #CCC; border-radius: 15px;"
+					>
+				</a>				
+			</div>
+		</div>
+
+
+		<div class="footer-section Links">
+			<h1><span>Quick Links</span></h1>
+			
+			<ul>
+				<li>
+					<a href="Index.html" target="_blank">
+						Homepage
+					</a>
+				</li>
+				<li>
+					<a href="About.html" target="_blank">
+						About Phishing
+					</a>
+				</li>
+				<li>
+					<a href="Examples.html" target="_blank">
+						Phishing Examples
+					</a>
+				</li>
+				<li>
+					<a href="PhishTech.html" target="_blank">
+						Phishing Techniques
+					</a>
+				</li>
+				<li>
+					<a href="Training.html" target="_blank">
+						Phishing Training
+					</a>
+				</li>
+				<li>
+					<a href="Training1-3.html" target="_blank">
+						Learn how to detect Phishing
+					</a>
+				</li>
+				<li>
+					<a href="Training1-2.html" target="_blank">
+						Learn how to avoid Phishing
+					</a>
+				</li>
+				<li>
+					<a href="D-Phish.html" target="_blank">
+						Use D-Phish
+					</a>
+				</li>
+				<li>
+					<a href="Quizzes.html" target="_blank">
+						Test your Knowledge
+					</a>
+				</li>
+				<li>
+					<a href="Games.html" target="_blank">
+						Play Some Games
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="footer-section Feedback">
+			<h1><span>Leave some feedback</span></h1>
+			
+			<form action="PhishingGuard_PHP.html" method="post">
+				<input 
+					type="text" 
+					value="" 
+					name="Name" 
+					class="text-input contact-input" 
+					placeholder="Enter Name..." 
+					style="margin-bottom: 1%; margin-left: 3%; padding-left: 6px; font-size: 15px;"
+					required
+				/>
+				<br />
+				<input 
+					type="email" 
+					value="" 
+					name="Email" 
+					class="text-input contact-input"
+					placeholder="Enter Email..." 
+					style="margin-bottom: 1%; margin-left: 3%; padding-left: 6px; font-size: 15px;" 
+				/>
+				<br />
+				<textarea placeholder="Enter Feedback Here..." style="margin-left: 3%; padding-left: 6px; font-size: 15px;" ></textarea>
+				<br />
+				<button 
+					type="submit" 
+					name="Submit" 
+					value="SEND" 
+					style="margin-bottom: 1%; margin-left: 3%; height: 25px; ">
+					<i class="fas fa-envelope"></i>
+					&nbsp;
+					Send
+				</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button 
+					type="submit" 
+					name="Submit" 
+					value="SEND"
+					style="margin-left: 3%; height: 25px;">
+					<i class="fas fa-undo"></i>
+					&nbsp;
+					Reset
+				</button>			
+			</form>
+		</div>
+	</div>
+
+	<div class = "footer-bottom">
+		<p>
+		Copyright &copy; 2019 Phishing Guard <br>
+		This Website was created by Katie Drury, Sarah Matevia, and Serge Kikonda for the University of Cincinnati's CECH, School of IT, Senior Design Course.<br>
+		For more information, click here to email our team: <a href="mailto:kikondsk@mail.uc.edu">Phishing Guard Support Team</a>.
+		</P>
+	</div>
+</div>
+</body>
+</html>

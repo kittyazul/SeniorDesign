@@ -1,0 +1,30 @@
+{
+    "strict": false,
+    "debug": true,
+    "sp": {
+        "entityId": "http://uc.phishingguard.net",
+        "assertionConsumerService": {
+            "url": "http://uc.phishingguard.net/?acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://uc.phishingguard.net/?sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "https://access.uc.edu/dag/saml2/idp/metadata.php",
+        "singleSignOnService": {
+            "url": "https://access.uc.edu/dag/saml2/idp/SSOService.php",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://access.uc.edu/dag/saml2/idp/SingleLogoutService.php?ReturnTo=https://access.uc.edu/dag/module.php/duosecurity/logout.php",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIDYTCCAkmgAwIBAgIBADANBgkqhkiG9w0BAQUFADBLMQswCQYDVQQGEwJVUzELMAkGA1UECAwCTUkxEjAQBgNVBAcMCUFubiBBcmJvcjEbMBkGA1UECgwSRHVvIFNlY3VyaXR5LCBJbmMuMB4XDTE3MDcxNzE1NDUwM1oXDTI3MDcxNTE1NDUwM1owSzELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk1JMRIwEAYDVQQHDAlBbm4gQXJib3IxGzAZBgNVBAoMEkR1byBTZWN1cml0eSwgSW5jLjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMq/UO0KvDnH3mS2mIcqQVarc5tNicH8udxNZoxjM3oVKTxXUVge65aF4xjwP8/zFRKLndiuixe5RzkCDMUYHjCLo+ki/W3ab5HgEHDIMAqw460Dst9bOXPq0xCL5MtTCLVsr82wixDGbM7hpzf+tSlRuAn0auEh4RR7Gg8VjlEHxEF5U9N2JxwEYKK6c40CVZ5xcrSHXWdoPCqirWbHElpT3EmEyOWrgJ+LoazQTwWwEJJJncoTw9YZZ9LaeNChCQuRQAu9dnHh8HsnxwvACYL4qT3sr4lIQsttSS1TjJkgXZIAtDLZmMKAd3LhtCjGfWD1bK3hxhsL6QgqkjoakosCAwEAAaNQME4wHQYDVR0OBBYEFFdqUWOdZ5jmqJ4jl3TeNbJkIhpAMB8GA1UdIwQYMBaAFFdqUWOdZ5jmqJ4jl3TeNbJkIhpAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAFwJDlYyG7TC8SjD4FUpkkOVF1pUwByh4VDZExxHoVjT9+qSOyQ7CLsHbaTzUINqsTo6BXSmwAjr+/7g7eElP9s+llJFO1Y8X4TqiwzxxXOj3otQPiWvbPwT4CLLssuBoA+gLHnCTjLYpfaJLgInAXxyc6AtzxsDd+n/3srqxvw0RjHuIRV40plpdnvuKnzTZMsxcMi1ATf3HWT8udLvKqSt/CiXALtKeYUORpnuB0jlUsGOTPxjbPkw8Gqh3YblfJytqLu6qhNwXrJxSJ0OaLo2s3L5hbuLFY/VXAKCA3z3jx/jJ/vtOR/5faf4EzKAeEq0ulXH5fC8uvTj5BlqVe0="
+    }
+}

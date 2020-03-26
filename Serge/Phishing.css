@@ -1,0 +1,893 @@
+/* ==================*/
+/* 		Key Rules    */ 
+/* ==================*/
+
+body {
+	margin-left: 1%;
+	margin-right: 1%;
+	color: #000000;
+	background-image: url(Images/NavD.jpg);
+	font-family: Palatino Linotype, "Book Antiqua", Palatino, serif;
+	}	
+
+header { 
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url(Images/giphy3.gif);
+	}	
+
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	font-family: "Lora", serif;
+	}
+
+
+h2 { 
+	font-size: 30px;
+	text-align: center;
+	font-family: "Lora", serif;
+	}
+
+h3 {font-family: Palatino Linotype, "Book Antiqua", Palatino, serif;}
+
+main {
+	margin: 0px; 	
+	color: black;
+	font-weight: bold;		
+	background-color: #800000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+	display: block;
+	font-size: 18px;
+	text-decoration: none;
+	border: 2px solid black;
+	}
+
+
+/* ======================*/
+/*    Navigation Rules   */ 
+/* ======================*/
+nav { 
+	text-align: center;
+	background-size: cover;
+	background-color: black;
+	background-image:url(Images/Tech-Back.jpg);
+	font-family: Palatino Linotype, "Book Antiqua", Palatino, serif;
+	}
+
+nav a { 
+	padding: 4%;
+	text-decoration: none;
+    background-repeat: repeat;
+	background-image: url(Images/NavA.jpg);
+	}	
+
+nav a:link { color: white;}
+
+nav a:visited {color: white;}
+
+nav a:hover { color: red;}
+
+nav ul{  
+	padding: .2%;
+	margin: 0px;
+	}
+
+ul.navmenu {
+	height: 80px;
+	font-size: 13pt;
+	list-style: none;
+	}
+
+ul.navmenu li {
+	float: left;
+	width: 250px;
+	text-align: center;
+	position: relative;
+	margin-left: 4.2%;
+	margin-bottom:-1%;
+	padding-left: .75%;
+	}
+
+ul.navmenu a{
+	width: 98%;
+	height: 25px;
+	display: block;
+	margin-top: 8px;
+	margin-left: -5%;
+	margin-right: -5%;
+	border-radius: 10px;
+	margin-bottom: 1px;
+	text-decoration: none;
+	border: 2px solid #CCC;
+	background-color: #ffffff;
+	}
+
+ul.navmenu .sub1 a{	margin-top: .5%;}
+
+ul.navmenu .sub2 a{	margin-left: .5%;}
+
+ul.navmenu ul.sub1 {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -1.5%;
+	}
+
+ul.navmenu ul.sub2 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 97%;
+	}
+
+ul.navmenu li:hover .sub1 {	display: block;}
+
+ul.navmenu .sub1 li:hover .sub2 { display: block;}
+
+ul.sub1 {
+	list-style: none;
+	font-size: 12pt;
+	}
+
+ul.sub2 {
+	list-style: none;
+	font-size: 12pt;
+	}
+
+
+/* =============================*/
+/*    UP and DOWN Arrow Rules   */ 
+/* =============================*/
+.darrow {
+	top: 38%;
+	right: 2%;
+	color: #ff3333;
+	font-size: 11pt;
+	position: absolute;
+	}
+
+.rarrow {
+	top: 15px;
+	right: 8%;
+	color: #ff4d4d;
+	font-size: 11pt;
+	position: absolute;
+	}
+
+/* ==================*/
+/*    Footer Rules   */
+/* ==================*/
+footer:link { color: #66ff99;}
+
+footer:visited {color: red;}
+
+.footer {
+	background: #303036;
+	color: #d3d3d3;
+	height: 585px;
+	font-size: 18px;
+	position: relative;
+	}
+
+.footer .footer-content{
+	height: 450px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section{
+	flex: 1;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.footer .footer-content .About .contact span{
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 1%;
+}
+
+.footer .footer-content .About .contact a:link { color: white; }
+
+.footer .footer-content .About .contact a:visited {color: white;}
+
+.footer .footer-content .About .contact a:hover { color: #05e2ff;}
+
+.footer .footer-content .About .socials span{
+	transition: all .2s;
+}
+.footer .footer-content .About .socials a:hover{
+	border: 3px solid #303036;
+	color: #303036;
+	transition: all .2s;
+}
+
+.footer .footer-content .Links a:link { color: white; }
+
+.footer .footer-content .Links a:visited {color: white;}
+
+.footer .footer-content .Links a:hover { color: #05e2ff;}
+
+.footer .footer-content .Links ul a {
+	display: block;
+	margin-bottom: 1%;
+	font-size: 17.5px;
+	transition: all .2s;
+}
+
+.footer .footer-content .Links ul a:hover{ 
+	background-color: #05e2ff65;
+	margin-left: 15px;
+	transition: all .2s;
+}
+
+.footer .footer-content .Links ul a:link { color: white; }
+
+.footer .footer-content .Links ul a:visited {color: white;}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+	color: white;
+}
+
+.footer .footer-content .About h1 span,
+.footer .footer-content .Links h1 span, 
+.footer .footer-content .Feedback h1 span,
+.PageWrapper .wrapper-section .DPhish {
+	color: #05e2ff;
+	text-shadow: 1px 1px #ff0000;
+}
+
+.footer .footer-bottom {
+	background-color: #05ffea9a;
+	color: black;
+	height: 100px;
+	width: 100%;
+	padding-top: 10px; 
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 18px;
+	border: 2px solid black;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+form{
+	width: 95%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+textarea {
+	width: 95%;
+	height: 150px;
+	max-width: 350px;
+	max-height: 200px;
+}
+
+input {
+	width: 92%;
+	height: 20px;
+}
+
+.footer .footer-bottom a:link{
+	color: whitesmoke;
+}
+
+.footer .footer-bottom a:visited{
+	color: whitesmoke;
+}
+
+.footer .footer-bottom a:hover{
+	color: rgba(97, 21, 21, 0.829);
+}
+
+
+/* ======================*/
+/* 		Page Rules    */ 
+/* ======================*/
+
+/* Wrapper*/ 
+.PageWrapper { 
+	width: 98.8%;
+	overflow: auto;
+	background-color: white;
+	margin: .5%;
+	border: 1px solid black;
+	}
+
+/* About Page*/
+#About {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 55%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#About-Link1 a:link, #About-Link1 a:visited,
+#About-Link2 a:link, #About-Link2 a:visited
+{
+	color: white;
+}
+
+#About-Link1 a:hover, #About-Link2 a:hover{
+	color: red;
+}
+
+#About-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#About-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 38%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+/* Tools & Resources Page*/
+#T_R {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 45%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#T_R-Link1 a:link, #T_R-Link1 a:visited{ color: white;}
+
+#T_R-Link1 a:hover{ color: red;}
+
+#T_R-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+/* What is Phishing? Page*/
+#Phishing101 {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 40%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#Phishing101-Link1 a:link, #Phishing101-Link1 a:visited,
+#Phishing101-Link2 a:link, #Phishing101-Link2 a:visited
+{
+	color: white;
+}
+
+#Phishing101-Link1 a:hover, #Phishing101-Link2 a:hover{
+	color: red;
+}
+
+#Phishing101-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Phishing101-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+} 
+
+/* Learn More Page*/
+#More {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 40%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#More-Link1 a:link, #More-Link1 a:visited,
+#More-Link2 a:link, #More-Link2 a:visited
+{
+	color: white;
+}
+
+#More-Link1 a:hover, #More-Link2 a:hover{
+	color: red;
+}
+
+#More-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#More-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+} 
+
+/* Training Page*/
+#Training {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 40%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#Training-Link1 a:link, #Training-Link1 a:visited,
+#Training-Link2 a:link, #Training-Link2 a:visited
+{
+	color: white;
+}
+
+#Training-Link1 a:hover, #Training-Link2 a:hover{
+	color: red;
+}
+
+#Training-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+/* Knowledge Page*/
+#Knowledge {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 40%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#Knowledge-Link1 a:link, #Knowledge-Link1 a:visited,
+#Knowledge-Link2 a:link, #Knowledge-Link2 a:visited
+{
+	color: white;
+}
+
+#Knowledge-Link1 a:hover, #Knowledge-Link2 a:hover{
+	color: red;
+}
+
+#Knowledge-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Knowledge-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 28%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+} 
+
+/* Phishing 101 Page*/
+#Training1 {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 45%;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/NavD.jpg);
+	}
+
+#Training1-Link1 a:link, #Training1-Link1 a:visited,
+#Training1-Link2 a:link, #Training1-Link2 a:visited,
+#Training1-Link3 a:link, #Training1-Link3 a:visited,
+#Training1-Link4 a:link, #Training1-Link4 a:visited,
+#Training1-Link5 a:link, #Training1-Link5 a:visited,
+#Training1-Link6 a:link, #Training1-Link6 a:visited{
+	color: white;
+}
+
+#Training1-Link1 a:hover, #Training1-Link1 a:hover,
+#Training1-Link2 a:hover, #Training1-Link2 a:hover,
+#Training1-Link3 a:hover, #Training1-Link3 a:hover,
+#Training1-Link4 a:hover, #Training1-Link4 a:hover,
+#Training1-Link5 a:hover, #Training1-Link5 a:hover,
+#Training1-Link6 a:hover, #Training1-Link6 a:hover{
+	color: red;
+}
+
+#Training1-Link1 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training1-Link2 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training1-Link3 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training1-Link4 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training1-Link5 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+#Training1-Link6 {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	height: 25px;
+	width: 30%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #80ffbf;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url(Images/giphy3.gif);
+}
+
+/* Phishing Techniques Page*/
+#container {
+	width: 84%;
+	height: 1835px;
+	margin-left: 8%;
+	margin-right: 8%;
+	/* TO TEST THIS FEATURE, COPY AND PASTE ABOVE
+		background-color: rgba(82, 153, 147, 0.459);
+		border: 3px solid black;
+	*/
+}
+
+#container #left {
+	width: 45%;
+	height: auto;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	float: left;
+	background-image:url(Images/giphy3.gif);
+	border: 3px solid rgb(0, 128, 117);
+}
+
+#container #right {
+	width: 45%;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	float: right;
+	background-image:url(Images/giphy3.gif);
+	border: 3px solid rgb(0, 128, 117);
+}
+
+
+/* =============================*/
+/*   		Other Rules		    */ 
+/* =============================*/
+
+/* Phishing 101 Introduction Page- Video 1: What is Phishing? */ 
+.responsive { 
+	height: 0px;
+	position: relative;
+	padding-bottom: 25%;
+	padding-top: 5%;
+	}
+
+.responsive iframe{
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	left: 18%;
+	right: 20%;
+	top: 5%;
+	bottom: 5%;
+	border: 2px solid black;
+}
+
+/* Examples Page*/
+.Examples {
+	width: 86%;
+	height: 600px;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.Examples-Demo{
+	width: 86%;
+	height: 450px;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+/* Learn More Button */ 
+.btn {
+	width: 18%;
+	height: 40px;
+	background-color: inherit;
+	padding-bottom: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 25px;
+	text-align: center;
+	font-family: Palatino Linotype, "Book Antiqua", Palatino, serif;
+}
+
+.more { color: red;}
+
+.more:visited { color: red;}
+
+.more:hover {
+	background: #f44336;
+  	color: white;
+}
+
+.article1 { color: dodgerblue;}
+
+.article1:visited { color: dodgerblue;}
+
+.article1:hover {
+	background: #2196F3;
+  	color: white;
+}
+
+.article2 { color: green;}
+
+.article2:visited { color: green;}
+
+.article2:hover {
+	background: #4CAF50;
+  	color: white;
+}
+
+.article3 { color: red;}
+
+.article3:visited { color: red;}
+
+.article3:hover {
+	background: #f44336;
+  	color: white;
+}
+
+.quiz { color: red;}
+
+.quiz:visited { color: red;}
+
+.quiz:hover {
+  	color: #f44336;
+}
