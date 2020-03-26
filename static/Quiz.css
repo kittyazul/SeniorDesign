@@ -141,7 +141,7 @@ body {
 
 .answers-tracker div.correct {
     background-color: green;
-    background-image: url(Images/correct.png);
+    background-image: url(correct.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -149,7 +149,7 @@ body {
 
 .answers-tracker div.wrong {
     background-color: red;
-    background-image: url(Images/wrong.png);
+    background-image: url(wrong.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
