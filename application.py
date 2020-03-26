@@ -22,6 +22,7 @@ def scan(ScanURL=None):
     #print(json.dumps(response.json(), indent=4, sort_keys=True))
 
 
+
 @application.route('/')
 @application.route('/<page_name>')
 def display(page_name=None):
