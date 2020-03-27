@@ -16,13 +16,12 @@ def scan(ScanURL=None):
     else:
         return render_template('D-Phish.html')		
     url = 'https://www.virustotal.com/vtapi/v2/url/scan'
-    params = {'apikey': '989c64be41dd704e7e834beb72774fe3e4c837e15bd1807f2284eb563e62135b', 'url':ScanURL}
+    params = {'apikey': 'VirusTotalApi', 'url':ScanURL}
     response = requests.post(url, data=params)
     return redirect(response.json()['permalink'])
     #print(json.dumps(response.json(), indent=4, sort_keys=True))
 
 
-@application.route('/')
 @application.route('/<page_name>')
 def display(page_name=None):
     if page_name is None:
