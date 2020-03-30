@@ -1,14 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for
 import requests
 import json
 import os
-import webbrowser
 application = Flask(__name__)
-
-@app.route('/favicon.ico')
-def favicon():
-    return ''
-  '''  return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')'''
 
 @application.route('/scan', methods=['GET', 'POST'])
 def scan(ScanURL=None):
